@@ -1,0 +1,38 @@
+.work {
+    width: 400px;
+    background-color: #9f9e9e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background-color: #757474;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image button {
+    width: 150px;
+    height: 40px;
+}
+
+.project {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #91ba91;
+}
+
+.project * {
+    margin: 8px 0 0 8px;
+}
+
+.description {
+}

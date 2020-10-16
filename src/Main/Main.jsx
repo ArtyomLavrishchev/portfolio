@@ -1,6 +1,7 @@
 import React from 'react';
 import style from "./Main.module.css"
 import styleContainer from "../Common/Styles/Container.module.css"
+
 function Main() {
     return (
         <div className={style.mainBlock}>

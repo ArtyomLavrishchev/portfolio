@@ -3,6 +3,10 @@ import './App.css';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
+import MyWorks from "./Works/MyWorks";
+import RecruitMe from "./RecruitMe/RecruitMe";
+import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer/Footer";
 
 function App() {
     return (
@@ -10,6 +14,10 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
+            <MyWorks/>
+            <RecruitMe/>
+            <Contacts/>
+            <Footer/>
         </div>
     );
 }
