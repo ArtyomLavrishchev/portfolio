@@ -4,8 +4,8 @@
 }
 
 .skillsContainer {
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .title {
