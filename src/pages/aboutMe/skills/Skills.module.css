@@ -1,0 +1,12 @@
+.skillsContainer {
+    flex-direction: column;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills div {
+    flex: 25%;
+}

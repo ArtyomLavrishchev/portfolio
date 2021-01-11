@@ -1,0 +1,30 @@
+.contactsBlock {
+    height: 100vh;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    height: 40%;
+    padding: 2px;
+}
+
+.form input {
+    margin-bottom: 10px;
+}
+
+.form textarea {
+    height: 100%;
+}
+
+.contactsContainer button {
+    width: 150px;
+    height: 40px;
+}

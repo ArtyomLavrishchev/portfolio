@@ -1,0 +1,129 @@
+.mainBlock {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    transition: 1s;
+}
+
+.text {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.6;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.text h1 {
+    margin: 0;
+}
+
+.colorBlock {
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+    transition: 1s;
+}
+
+.greeting {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+    margin-block-end: 1em;
+}
+
+.myName {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.myName span {
+    color: white;
+}
+
+.aboutMe {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1.66em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: 400;
+    transition: 1s;
+}
+
+.photo {
+    position: fixed;
+    height: calc(100vh - 60px);
+    width: 100%;
+    left: 30px;
+    max-width: 33.333333%;
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px 2px black;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.button {
+    position: relative;
+    border-radius: 26px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 0 40px;
+    overflow: hidden;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    transition: 1s;
+
+}
+.button:hover {
+    box-shadow: -3px 3px 7px black;
+
+}
+
+.button span {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.button:hover span {
+    opacity: 1;
+    padding-left: 15px;
+}
+.link {
+    text-decoration: none;
+    color: #fff;
+}

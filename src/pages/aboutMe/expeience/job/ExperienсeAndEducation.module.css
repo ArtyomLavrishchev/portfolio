@@ -1,0 +1,22 @@
+.wrapper {
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+    box-sizing: border-box;
+    display: block;
+}
+.icon {
+    background-color: #ffb400;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
