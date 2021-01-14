@@ -5,8 +5,10 @@ import Nav from "./common/nav/Nav";
 import {Themes} from "./common/themes/Themes";
 import {useDispatch, useSelector} from "react-redux";
 import {setThemeColorAC} from "./redux/themesReducer";
+import {useWindowSize} from "./common/hooks/hooks";
 
 function App() {
+    const size = useWindowSize()
     const dispatch = useDispatch()
     const colorsForTheme = useSelector(state => state.theme.colors)
     const selectedColor = useSelector(state => state.theme.themeColor)
@@ -25,7 +27,7 @@ function App() {
         <div className={"App"}>
             <Themes setColor={setColor} colors={colorsForTheme} theme={theme}/>
             <Nav theme={theme}/>
-            <Routes theme={theme}/>
+            <Routes size={size} theme={theme}/>
         </div>
     );
 }

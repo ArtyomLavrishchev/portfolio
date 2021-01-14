@@ -17,7 +17,7 @@ function Routes(props) {
         <div>
             <Switch>
                 <Route path={"/"} exact render={() => <Redirect to={PATH.HOME}/>}/>
-                <Route path={PATH.HOME} render={() => <Home theme={props.theme}/>}/>
+                <Route path={PATH.HOME} render={() => <Home size={props.size} theme={props.theme}/>}/>
                 <Route path={PATH.ABOUT_ME} render={() => <AboutMe theme={props.theme}/>}/>
                 <Route path={PATH.PORTFOLIO} render={() => <MyPortfolio theme={props.theme}/>}/>
                 <Route path={PATH.CONTACTS} render={() => <Contact theme={props.theme}/>}/>
