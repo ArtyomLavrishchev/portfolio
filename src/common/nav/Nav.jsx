@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./Nav.module.css"
+import style from "./Nav.module.scss"
 import {PATH} from "../routes/Routes1";
 import {NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

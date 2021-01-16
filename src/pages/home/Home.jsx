@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./Home.module.css"
+import style from "./Home.module.scss"
 import {NavLink} from "react-router-dom"
 import photo from "../../assets/images/photo/photo.jpg"
 import styleContainer from "../../common/styles/Container.module.css";

@@ -17,7 +17,7 @@ export function useWindowSize() {
         window.addEventListener("resize", handleResize);
         handleResize();
         return () => window.removeEventListener("resize", handleResize);
-    }, [window.innerWidth, window.innerHeight]);
+    }, []);
 
     return windowSize;
 }
