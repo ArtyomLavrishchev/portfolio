@@ -1,12 +1,14 @@
 import React from 'react';
 import style from "./MyPortfolio.module.css"
-import styleContainer from "../../common/styles/Container.module.css"
+import styleContainer from "../../common/styles/Container.module.scss"
 import Work from "./work/Work";
 import Header from "../header/Header";
+import {Preloader} from "../../common/preloader/Preloader";
 
 function MyPortfolio() {
     return (
         <div className={style.worksBlock}>
+            <Preloader/>
             <Header h1Title={"MY"} spanTitle={" PORTFOLIO"} rearTitle={"WORKS"}/>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
                 <h2 className={style.title}>My works</h2>

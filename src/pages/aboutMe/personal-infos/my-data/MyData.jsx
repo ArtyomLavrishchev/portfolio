@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./MyData.module.css";
+import style from "./MyData.module.scss";
 
 export const MyData = (props) => {
     return (

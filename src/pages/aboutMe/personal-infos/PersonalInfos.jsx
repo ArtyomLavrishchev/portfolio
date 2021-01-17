@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./PersonalInfos.module.css"
-import styleContainer from "../../../common/styles/Container.module.css";
+import style from "./PersonalInfos.module.scss"
+import styleContainer from "../../../common/styles/Container.module.scss";
 import {MyData} from "./my-data/MyData";
 
 export const PersonalInfos = () => {

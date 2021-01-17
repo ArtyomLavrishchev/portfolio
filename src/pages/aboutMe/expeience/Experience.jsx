@@ -1,5 +1,5 @@
 import React from "react";
-import styleContainer from "../../../common/styles/Container.module.css";
+import styleContainer from "../../../common/styles/Container.module.scss";
 import style from "./Experience.module.scss";
 import {ExperienceAndEducation} from "./job/ExperienсeAndEducation";
 import {faUserGraduate, faUserTie} from "@fortawesome/free-solid-svg-icons";

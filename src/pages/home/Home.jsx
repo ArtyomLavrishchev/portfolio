@@ -2,9 +2,10 @@ import React from 'react';
 import style from "./Home.module.scss"
 import {NavLink} from "react-router-dom"
 import photo from "../../assets/images/photo/photo.jpg"
-import styleContainer from "../../common/styles/Container.module.css";
+import styleContainer from "../../common/styles/Container.module.scss";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Preloader} from "../../common/preloader/Preloader";
 
 function Home(props) {
     const {text, block} = props.theme
@@ -13,6 +14,7 @@ function Home(props) {
     }
     return (
         <div>
+            <Preloader/>
             <div className={`${styleContainer.container} ${style.mainBlock}`}>
                     <div style={block} className={style.colorBlock}/>
                     <div style={myPhoto} className={style.photo}/>

@@ -3,7 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
 
+
   .wrapper {
     display: flex;
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+    }
   }
 }
