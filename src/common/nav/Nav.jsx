@@ -6,9 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelopeOpen, faHome, faSuitcase, faUser} from "@fortawesome/free-solid-svg-icons";
 
 function Nav(props) {
-    const activeColor = {
-        backgroundColor: props.theme.block.backgroundColor
-    }
+    const activeColor = props.theme.block
     return (
         <div className={style.navBlock}>
             <NavLink className={style.item} activeStyle={activeColor} to={PATH.HOME}>

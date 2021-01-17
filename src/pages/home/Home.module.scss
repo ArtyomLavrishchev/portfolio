@@ -5,7 +5,7 @@
   height: 100vh;
   padding-right: 15px;
   padding-left: 15px;
-  @include flex(flex, column, null, center);
+  @include flex(column, null, center);
   @include text(('Open Sans', sans-serif), 100px, 700, 5);
 
   .colorBlock {
@@ -16,6 +16,7 @@
     left: -83%;
     top: -50%;
     transition: 1s;
+    @include hide();
   }
 
   .photo {
@@ -30,6 +31,7 @@
     box-shadow: $blockShadow;
     border-radius: 15px;
     z-index: 1;
+    @include hide();
   }
 
   .SmallPhoto {
@@ -47,10 +49,13 @@
     max-width: 40%;
     left: 22%;
     transition: 1s;
-    @include flex(flex, column, center, null);
+    @include flex(column, center, null);
     @include text(('Poppins', sans-serif), 15px, 500, 1.6);
     @media screen and (max-width: 990px) {
       left: 0;
+    }
+    @media screen and (max-height: 400px) {
+      max-width: 90%;
     }
 
     .greeting {

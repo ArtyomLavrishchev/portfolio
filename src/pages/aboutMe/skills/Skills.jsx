@@ -18,13 +18,13 @@ const skills = [
     {name: "Redux", icon: reduxIcon}
 ]
 
-export const Skills = () => {
+export const Skills = (props) => {
     return (
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
             <h2>My skills</h2>
             <div>
                 <div className={style.skills}>
-                    {skills.map(s => <Skill icon={s.icon} title={s.name} key={s.name}/>)}
+                    {skills.map(s => <Skill theme={props.theme} icon={s.icon} title={s.name} key={s.name}/>)}
                 </div>
             </div>
         </div>

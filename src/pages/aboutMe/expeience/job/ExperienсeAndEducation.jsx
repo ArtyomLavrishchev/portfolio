@@ -1,6 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import style from "./ExperienсeAndEducation.module.css"
+import style from "./ExperienсeAndEducation.module.scss"
 
 export const ExperienceAndEducation = (props) => {
     return (
@@ -8,7 +8,7 @@ export const ExperienceAndEducation = (props) => {
             return (
                 <div key={w.id} className={style.wrapper}>
                     <div>
-                        <FontAwesomeIcon className={style.icon} icon={w.logo}/>
+                        <FontAwesomeIcon style={props.theme.block} className={style.icon} icon={w.logo}/>
                     </div>
                     <div>
                         <span>{w.date}</span>

@@ -9,7 +9,7 @@
   height: calc(100vh - 200px);
   top: 100px;
   transition: 1s;
-  @include flex(flex, column, flex-end, center);
+  @include flex(column, flex-end, center);
 
   & a {
     min-width: 50px;
@@ -22,7 +22,7 @@
     font-weight: 500;
     z-index: 2;
     transition: 1s;
-    @include flex(flex, null, center, center);
+    @include flex(null, center, center);
   }
 
   .item {
@@ -39,7 +39,7 @@
       opacity: 0;
       padding: 0 45px 0 20px;
       transition: 0.3s;
-      @include flex(flex, null, center, center);
+      @include flex(null, center, center);
     }
 
     &:hover span {
@@ -49,9 +49,3 @@
     }
   }
 }
-
-
-
-
-
-

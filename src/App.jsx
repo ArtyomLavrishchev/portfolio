@@ -6,6 +6,7 @@ import {Themes} from "./common/themes/Themes";
 import {useDispatch, useSelector} from "react-redux";
 import {setThemeColorAC} from "./redux/themesReducer";
 import {useWindowSize} from "./common/hooks/hooks";
+import {BurgerMenu} from "./common/menu/BurgerMenu";
 
 function App() {
     const size = useWindowSize()
@@ -25,9 +26,13 @@ function App() {
     }
     return (
         <div className={"App"}>
-            <Themes setColor={setColor} colors={colorsForTheme} theme={theme}/>
-            <Nav theme={theme}/>
-            <Routes size={size} theme={theme}/>
+            {size.width <= 990 ? <BurgerMenu setColor={setColor} colors={colorsForTheme} theme={theme}/> :
+                <>
+                    <Themes setColor={setColor} colors={colorsForTheme} theme={theme}/>
+                    <Nav theme={theme}/>
+                </>
+            }
+            <Routes theme={theme}/>
         </div>
     );
 }

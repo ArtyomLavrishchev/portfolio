@@ -7,22 +7,15 @@ import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function Home(props) {
-    const {width, height} = props.size
     const {text, block} = props.theme
     const myPhoto = {
         backgroundImage: `url(${photo})`
     }
-    const photoClassName = `${width <= 990 ? style.SmallPhoto : ''} ${style.photo} `
     return (
         <div>
             <div className={`${styleContainer.container} ${style.mainBlock}`}>
-                {width >= 990 &&
-                <>
                     <div style={block} className={style.colorBlock}/>
-                    <div style={myPhoto} className={photoClassName}/>
-                </>
-                }
-
+                    <div style={myPhoto} className={style.photo}/>
                 <div className={style.text}>
                     <div>
                         <h6 className={style.greeting}>Hi THERE!</h6>

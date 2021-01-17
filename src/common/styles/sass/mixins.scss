@@ -8,9 +8,24 @@
   color: $textColor;
 }
 
-@mixin flex($display, $flexDirection, $alignItems, $justifyContent) {
-  display: $display;
+@mixin flex($flexDirection, $alignItems, $justifyContent) {
+  display: flex;
   flex-direction: $flexDirection;
   align-items: $alignItems;
   justify-content: $justifyContent;
+}
+
+@mixin hide() {
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
+}
+
+@mixin burgerMenuLine($content: null, $top: null) {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: $textColor;
+  content: $content;
+  top: $top;
 }

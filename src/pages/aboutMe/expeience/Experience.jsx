@@ -1,6 +1,6 @@
 import React from "react";
 import styleContainer from "../../../common/styles/Container.module.css";
-import style from "./Experience.module.css";
+import style from "./Experience.module.scss";
 import {ExperienceAndEducation} from "./job/ExperienсeAndEducation";
 import {faUserGraduate, faUserTie} from "@fortawesome/free-solid-svg-icons";
 
@@ -42,16 +42,16 @@ const university = [
     }
 ]
 
-export const Experience = () => {
+export const Experience = (props) => {
     return (
         <div className={`${styleContainer.container} ${style.experienceContainer}`}>
             <h2>EXPERIENCE & EDUCATION</h2>
             <div className={style.wrapper}>
                 <div>
-                    <ExperienceAndEducation experience={jobs}/>
+                    <ExperienceAndEducation theme={props.theme} experience={jobs}/>
                 </div>
                 <div>
-                    <ExperienceAndEducation experience={university}/>
+                    <ExperienceAndEducation theme={props.theme} experience={university}/>
                 </div>
             </div>
         </div>
