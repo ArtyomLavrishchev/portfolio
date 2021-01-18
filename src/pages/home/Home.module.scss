@@ -1,121 +1,127 @@
 @import "../../common/styles/sass/variables";
 @import "../../common/styles/sass/mixins";
 
-.mainBlock {
-  height: 100vh;
-  padding-right: 15px;
-  padding-left: 15px;
-  @include flex(column, null, center);
-  @include text(('Open Sans', sans-serif), 100px, 700, 5);
 
-  .colorBlock {
-    position: fixed;
-    height: 200%;
-    width: 100%;
-    transform: rotate(-15deg);
-    left: -83%;
-    top: -50%;
-    transition: 1s;
-    @include hide();
-  }
+.wrapper {
+  @include pageAppearance();
 
-  .photo {
-    position: absolute;
-    height: calc(100vh - 60px);
-    width: 100%;
-    left: 30px;
-    max-width: 33.333333%;
-    background-size: cover;
-    background-position: top;
-    box-sizing: border-box;
-    box-shadow: $blockShadow;
-    border-radius: 15px;
-    z-index: 1;
-    @include hide();
-  }
+  .mainBlock {
+    height: 100vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include flex(column, null, center);
+    @include text(('Open Sans', sans-serif), 100px, 700, 5);
 
-  .SmallPhoto {
-    border-radius: 50%;
-    max-width: 200px;
-    max-height: 200px;
-    position: relative;
-    left: 0;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-  }
+    .colorBlock {
+      position: fixed;
+      height: 200%;
+      width: 100%;
+      transform: rotate(-15deg);
+      left: -83%;
+      top: -50%;
+      transition: 1s;
+      @include hide();
+    }
 
-  .text {
-    position: relative;
-    max-width: 40%;
-    left: 22%;
-    transition: 1s;
-    @include flex(column, center, null);
-    @include text(('Poppins', sans-serif), 15px, 500, 1.6);
-    @media screen and (max-width: 990px) {
+    .photo {
+      background-image: url('../../assets/images/photo/photo.jpg');
+      position: absolute;
+      height: calc(100vh - 60px);
+      width: 100%;
+      left: 30px;
+      max-width: 33.333333%;
+      background-size: cover;
+      background-position: top;
+      box-sizing: border-box;
+      box-shadow: $blockShadow;
+      border-radius: 15px;
+      z-index: 1;
+      @include hide();
+    }
+
+    .SmallPhoto {
+      border-radius: 50%;
+      max-width: 200px;
+      max-height: 200px;
+      position: relative;
       left: 0;
-    }
-    @media screen and (max-height: 400px) {
-      max-width: 90%;
-    }
-
-    .greeting {
-      margin: 0;
-      margin-block-end: 1em;
-      @include text(('Open Sans', sans-serif), 22px, 400, null);
+      margin-bottom: 50px;
+      flex-wrap: wrap;
     }
 
-    .myName {
-      margin: 0;
+    .text {
+      position: relative;
+      max-width: 40%;
+      left: 22%;
       transition: 1s;
-      @include text(('Poppins', sans-serif), 45px, 700, 45px);
+      @include flex(column, center, null);
+      @include text(('Poppins', sans-serif), 15px, 500, 1.6);
       @media screen and (max-width: 990px) {
-        font-size: 35px;
+        left: 0;
       }
-    }
+      @media screen and (max-height: 400px) {
+        max-width: 90%;
+      }
 
-    .myName span {
-      color: $textColor;
-    }
+      .greeting {
+        margin: 0;
+        margin-block-end: 1em;
+        @include text(('Open Sans', sans-serif), 22px, 400, null);
+      }
 
-    .aboutMe {
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1.66em;
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-      transition: 1s;
-      @include text(('Open Sans', sans-serif), 16px, 400, 30px);
-    }
-
-    .link {
-      text-decoration: none;
-      color: $textColor;
-
-      .button {
-        position: relative;
-        display: inline-block;
-        width: 170px;
-        padding: 0 40px;
-        overflow: hidden;
-        letter-spacing: 0.5px;
-        cursor: pointer;
-        text-align: center;
-        border-radius: 26px;
+      .myName {
+        margin: 0;
         transition: 1s;
-        @include text(('Poppins', sans-serif), 16px, 600, 46px);
-
-        &:hover {
-          box-shadow: $blockShadow;
+        @include text(('Poppins', sans-serif), 45px, 700, 45px);
+        @media screen and (max-width: 990px) {
+          font-size: 35px;
         }
+      }
 
-        & span {
-          opacity: 0;
-          transition: 0.3s;
-        }
+      .myName span {
+        color: $textColor;
+      }
 
-        &:hover span {
-          opacity: 1;
-          padding-left: 15px;
+      .aboutMe {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1.66em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        transition: 1s;
+        @include text(('Open Sans', sans-serif), 16px, 400, 30px);
+      }
+
+      .link {
+        text-decoration: none;
+        color: $textColor;
+
+        .button {
+          position: relative;
+          display: inline-block;
+          width: 170px;
+          padding: 0 40px;
+          overflow: hidden;
+          letter-spacing: 0.5px;
+          cursor: pointer;
+          text-align: center;
+          border-radius: 26px;
+          transition: 1s;
+          @include text(('Poppins', sans-serif), 16px, 600, 46px);
+
+          &:hover {
+            box-shadow: $blockShadow;
+          }
+
+          & span {
+            opacity: 0;
+            transition: 0.3s;
+          }
+
+          &:hover span {
+            opacity: 1;
+            padding-left: 15px;
+          }
         }
       }
     }

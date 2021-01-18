@@ -1,0 +1,25 @@
+@import "../../common/styles/sass/mixins";
+
+.wrapper {
+  @include pageAppearance();
+  min-height: 100vh;
+
+  .worksContainer {
+    align-items: flex-start;
+    justify-content: center;
+
+    .title {
+
+    }
+
+    .works {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+}
+
+

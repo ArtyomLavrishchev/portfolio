@@ -5,8 +5,8 @@
     width: 100vw;
     height: 100vh;
     background-color: #333333;
-    z-index: 500;
     transition: 1s;
+    z-index: 330;
 }
 
 .onLoad {

@@ -1,0 +1,33 @@
+@import "../../common/styles/sass/mixins.scss";
+
+.wrapper {
+  @include pageAppearance();
+  min-height: 100vh;
+
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 60%;
+      height: 40%;
+      padding: 2px;
+
+      & input {
+        margin-bottom: 10px;
+      }
+
+      & textarea {
+        height: 100%;
+      }
+    }
+
+    & button {
+      width: 150px;
+      height: 40px;
+    }
+  }
+}

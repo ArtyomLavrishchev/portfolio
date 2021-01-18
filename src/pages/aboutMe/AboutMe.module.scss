@@ -1,0 +1,5 @@
+@import "../../common/styles/sass/mixins";
+
+.wrapper {
+@include pageAppearance();
+}

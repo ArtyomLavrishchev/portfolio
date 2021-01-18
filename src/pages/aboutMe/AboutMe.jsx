@@ -4,15 +4,18 @@ import {PersonalInfos} from "./personal-infos/PersonalInfos";
 import {Skills} from "./skills/Skills";
 import {Experience} from "./expeience/Experience";
 import {Preloader} from "../../common/preloader/Preloader";
+import style from "./AboutMe.module.scss"
 
 function AboutMe(props) {
     return (
         <>
             <Preloader/>
-            <Header h1Title={"ABOUT"} spanTitle={" ME"} rearTitle={"RESUME"}/>
-            <PersonalInfos/>
-            <Skills theme={props.theme}/>
-            <Experience theme={props.theme}/>
+            <div className={style.wrapper}>
+                <Header h1Title={"ABOUT"} spanTitle={" ME"} rearTitle={"RESUME"}/>
+                <PersonalInfos/>
+                <Skills theme={props.theme}/>
+                <Experience theme={props.theme}/>
+            </div>
         </>
     );
 }

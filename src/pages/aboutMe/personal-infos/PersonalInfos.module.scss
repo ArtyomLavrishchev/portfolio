@@ -1,6 +1,32 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
 .infoContainer {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  @media screen and (max-width: 990px) {
+    align-items: center;
+  }
 }
+
+.photo {
+  background-image: url('../../../assets/images/photo/photo.jpg');
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: top;
+  box-sizing: border-box;
+  box-shadow: $blockShadow;
+  border-radius: 50%;
+  z-index: 1;
+  margin-bottom: 50px;
+  @media screen and (min-width: 990px) {
+    display: none;
+  }
+}
+
+
 
 

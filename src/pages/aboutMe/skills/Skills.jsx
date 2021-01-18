@@ -21,7 +21,7 @@ const skills = [
 export const Skills = (props) => {
     return (
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-            <h2>My skills</h2>
+            <h3 className={style.title}>MY SKILLS</h3>
             <div>
                 <div className={style.skills}>
                     {skills.map(s => <Skill theme={props.theme} icon={s.icon} title={s.name} key={s.name}/>)}

@@ -45,7 +45,7 @@ const university = [
 export const Experience = (props) => {
     return (
         <div className={`${styleContainer.container} ${style.experienceContainer}`}>
-            <h2>EXPERIENCE & EDUCATION</h2>
+            <h3 className={style.title}>EXPERIENCE & EDUCATION</h3>
             <div className={style.wrapper}>
                 <div>
                     <ExperienceAndEducation theme={props.theme} experience={jobs}/>

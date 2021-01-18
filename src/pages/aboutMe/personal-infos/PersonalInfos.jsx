@@ -21,6 +21,7 @@ export const PersonalInfos = () => {
 
     return (
         <div className={`${styleContainer.container} ${style.infoContainer}`}>
+            <div className={style.photo}/>
             <MyData me={me} contacts={contacts}/>
         </div>
     )
