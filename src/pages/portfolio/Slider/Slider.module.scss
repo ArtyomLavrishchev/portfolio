@@ -1,0 +1,10 @@
+.swiperContainer {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  margin-bottom: 10px;
+  @media screen and (max-width: 990px) {
+    width: 250px;
+    height: 250px;
+  }
+}

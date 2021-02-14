@@ -29,7 +29,7 @@ export const BurgerMenu = (props) => {
                     <span>CONTACT</span>
                 </NavLink>
                 <div className={style.settings}>
-                    {props.colors.map(color => <span onClick={() => props.setColor(color)} className={style.color} style={{'background': color }}/>)}
+                    {props.colors.map(color => <span key={color} onClick={() => props.setColor(color)} className={style.color} style={{'background': color }}/>)}
                 </div>
             </div>
         </div>

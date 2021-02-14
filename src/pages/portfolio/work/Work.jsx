@@ -1,15 +1,13 @@
 import React from 'react';
-import style from "./work.module.css"
+import style from "./work.module.scss"
 
-function Work(props) {
+function Work({work, theme}) {
     return (
         <div className={style.work}>
-            <div className={style.image}>
-                <button>Look</button>
+            <div style={{backgroundImage: `url(${work.img})`}} className={style.image}>
             </div>
             <div className={style.project}>
-                <h4>{props.title}</h4>
-                <span className={style.description}>{props.description}</span>
+                <a style={theme.text} href={work.url}>{work.title}</a>
             </div>
         </div>
     );

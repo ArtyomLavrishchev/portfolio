@@ -2,24 +2,16 @@
 
 .wrapper {
   @include pageAppearance();
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   .worksContainer {
-    align-items: flex-start;
-    justify-content: center;
-
-    .title {
-
-    }
-
-    .works {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
   }
-
 }
 
 

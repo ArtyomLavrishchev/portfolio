@@ -18,7 +18,7 @@ export const Themes = (props) => {
                     <input type={"checkbox"} onChange={isActive} className={style.checkbox}/>
                     <span style={props.theme.text} className={style.fake}><div>{checked ? "\u2716" : "\u2699"}</div></span>
                 </label>
-                {props.colors.map(color => <div onClick={() => props.setColor(color)} className={style.color} style={{'background': color }}/>)}
+                {props.colors.map(color => <div key={color} onClick={() => props.setColor(color)} className={style.color} style={{'background': color }}/>)}
             </div>
         </div>
     )
