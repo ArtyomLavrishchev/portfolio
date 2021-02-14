@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fcce20a97a7292251da67b1bf52bf76",
+    "revision": "04bf77c087c469eb059b167c19e2ea0d",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "3cd8237e08df551d4932",
-    "url": "/portfolio/static/css/main.da6907f1.chunk.css"
+    "revision": "edb04f2a5f9cc0787d8b",
+    "url": "/portfolio/static/css/2.f4361951.chunk.css"
   },
   {
-    "revision": "0b3a389a16c22bf4643a",
-    "url": "/portfolio/static/js/2.49855459.chunk.js"
+    "revision": "450d3de7032e4fdfda31",
+    "url": "/portfolio/static/css/main.71c91ff8.chunk.css"
+  },
+  {
+    "revision": "edb04f2a5f9cc0787d8b",
+    "url": "/portfolio/static/js/2.79053480.chunk.js"
   },
   {
     "revision": "a3c66bc87fa121efed0250fdac2dfa2b",
-    "url": "/portfolio/static/js/2.49855459.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.79053480.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3cd8237e08df551d4932",
-    "url": "/portfolio/static/js/main.78ba1ea7.chunk.js"
+    "revision": "450d3de7032e4fdfda31",
+    "url": "/portfolio/static/js/main.beb6f62b.chunk.js"
   },
   {
     "revision": "b417b3ee81e3e8f9aad5",
@@ -46,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fd1f6f3d0d443786d65a37162b101481",
     "url": "/portfolio/static/media/reduxIcon.fd1f6f3d.svg"
+  },
+  {
+    "revision": "d58076fde708432d3df01c191b2ceff5",
+    "url": "/portfolio/static/media/socialnet.d58076fd.png"
+  },
+  {
+    "revision": "a4de074bdfbfab3897e85c9cd3ef8b85",
+    "url": "/portfolio/static/media/trainingCards.a4de074b.png"
   },
   {
     "revision": "b4fb02a0486fe24f6a222315755cdd94",
