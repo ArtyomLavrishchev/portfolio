@@ -10,7 +10,9 @@ const jobs = [
         specialty: "GEOINFORMATION SYSTEMS SPECIALIST",
         organisation: "DATUM GROUP",
         date: "2018-PRESENT",
-        description: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+        description: `Work in various information systems (ArcGIS, QGIS, Zulu, etc.), preparation of reporting documentation,
+                      quality control of work employees. Participation in projects for creation of various GIS systems for state structures,
+                      infrastructure companies and large business. Database creation and cartographic material as a basis for IT solutions.`,
         logo: faUserTie
     },
     {
@@ -18,7 +20,7 @@ const jobs = [
         specialty: "HEAD OF AUTO VINYL STUDIO",
         organisation: "INDIVIDUAL ENTREPRENEUR LAVRISHCHEV ARTEM SERGEEVICH",
         date: "2014-2018",
-        description: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+        description: "Organization of a stable service functioning at all stages work.",
         logo: faUserTie
     }
 ]
@@ -28,8 +30,8 @@ const university = [
         id: 1,
         specialty: "FRONTEND DEVELOPER",
         organisation: "IT-INCUBATOR",
-        date: "2020-PRESENT",
-        description: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+        date: "2020-2021",
+        description: "JS, React, Redux courses",
         logo: faUserGraduate
     },
     {
@@ -37,7 +39,7 @@ const university = [
         specialty: "GEOECOLOGY",
         organisation: "SOUTH FEDERAL UNIVERSITY",
         date: "2007-2012",
-        description: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+        description: null,
         logo: faUserGraduate
     }
 ]

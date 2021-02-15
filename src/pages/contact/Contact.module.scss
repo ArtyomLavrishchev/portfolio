@@ -1,33 +1,91 @@
 @import "../../common/styles/sass/mixins.scss";
+@import "../../common/styles/sass/variables";
+@import "../home/Home.module";
 
 .wrapper {
   @include pageAppearance();
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   .contactsContainer {
-    display: flex;
-    flex-direction: column;
-
-    .form {
-      display: flex;
+    @include flex(row, center, center);
+    width: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    @media screen and (max-width: 990px) {
       flex-direction: column;
-      justify-content: flex-start;
-      width: 60%;
-      height: 40%;
-      padding: 2px;
-
-      & input {
-        margin-bottom: 10px;
-      }
-
-      & textarea {
-        height: 100%;
-      }
     }
 
-    & button {
-      width: 150px;
-      height: 40px;
+    .contacts {
+      @include flex(column, flex-start, center);
+      width: 50%;
+    }
+
+    .form {
+      @include flex(column, flex-start, center);
+      @include text(('Poppins', sans-serif), 15px, 500, 1.6);
+      width: 50%;
+
+      .formArea,
+      .messageArea {
+        background-color: #252525;
+        border-radius: 30px;
+        color: $textColor;
+        padding: 12px 26px;
+        border: 1px solid #111;
+        outline: none !important;
+        margin: 0 0 20px 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        box-sizing: border-box;
+      }
+
+      .formArea {
+        width: 100%;
+        position: relative;
+        min-width: 125px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .messageArea {
+        width: 100%;
+        transition: .2s;
+        resize: vertical;
+      }
+
+      .btn {
+        width: 170px;
+        padding: 0 40px;
+        overflow: hidden;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        border-radius: 26px;
+        transition: 1s;
+        margin-top: 20px;
+        @include text(('Poppins', sans-serif), 16px, 600, 46px);
+
+        &:hover {
+          box-shadow: $blockShadow;
+        }
+
+        & span {
+          opacity: 0;
+          transition: 0.3s;
+        }
+
+        @media screen and (min-width: 990px) {
+          &:hover span {
+            opacity: 1;
+            padding-left: 15px;
+          }
+          width: 200px;
+        }
+      }
     }
   }
 }
