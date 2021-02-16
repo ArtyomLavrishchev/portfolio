@@ -19,7 +19,8 @@
 
     .contacts {
       @include flex(column, flex-start, center);
-      width: 50%;
+      width: 30%;
+      margin-right: 20px;
     }
 
     .form {
@@ -40,6 +41,14 @@
         font-size: inherit;
         line-height: inherit;
         box-sizing: border-box;
+
+        &:-webkit-autofill {
+          color: $textColor;
+          border: 1px solid #111;
+          -webkit-box-shadow: 0 0 0 1000px #242424 inset;
+          -webkit-text-fill-color: $textColor;
+          transition: background-color 5000s ease-in-out 0s;
+        }
       }
 
       .formArea {
@@ -54,6 +63,7 @@
         width: 100%;
         transition: .2s;
         resize: vertical;
+        min-height: 120px;
       }
 
       .btn {
@@ -83,7 +93,6 @@
             opacity: 1;
             padding-left: 15px;
           }
-          width: 200px;
         }
       }
     }

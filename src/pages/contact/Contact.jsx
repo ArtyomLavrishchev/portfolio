@@ -32,11 +32,13 @@ function Contact(props) {
                             ideas or opportunities to be part of your visions.</p>
                         <p>
                             <span>MAIL ME</span>
-                            temalggt540@gmail.com
+                            <a href="mailto:temalggt540@gmail.com" type={"email"}>temalggt540@gmail.com</a>
+
                         </p>
                         <p>
                             <span>CALL ME</span>
-                            +7 989 711 61 72
+                            <a href="tel:+7 (989)711 61 72">+7 989 711 61 72</a>
+
                         </p>
                     </div>
                     <form onSubmit={formik.handleSubmit} className={style.form}>
@@ -70,7 +72,7 @@ function Contact(props) {
                             placeholder={"YOUR MESSAGE"}
                         />
                         <button style={block} className={style.btn} type="submit">
-                            Submit <span><FontAwesomeIcon icon={faPaperPlane}/></span>
+                            SEND <span><FontAwesomeIcon icon={faPaperPlane}/></span>
                         </button>
                     </form>
                 </div>
