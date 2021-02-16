@@ -1,23 +1,47 @@
+@import "../../../common/styles/sass/mixins";
+@import "../../../common/styles/sass/variables";
+
 .experienceContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
+  .title {
+    padding-bottom: 22px;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+  }
 
   .wrapper {
     display: flex;
     @media screen and (max-width: 990px) {
       flex-direction: column;
     }
+
+    .item {
+      .cv {
+        background-color: #ffb400;
+        bottom: 0;
+        text-decoration: none;
+        color: $textColor;
+        position: relative;
+        width: 150px;
+        padding: 7px 30px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 26px;
+        transition: 1s;
+        @include text(('Poppins', sans-serif), 16px, 600, 46px);
+
+        &:hover {
+          box-shadow: $blockShadow;
+        }
+      }
+    }
   }
 }
 
-.title {
-  padding-bottom: 22px;
-  font-size: 26px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
 
-}

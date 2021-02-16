@@ -6,6 +6,7 @@ import {Experience} from "./expeience/Experience";
 import {Preloader} from "../../common/preloader/Preloader";
 import style from "./AboutMe.module.scss"
 
+
 function AboutMe(props) {
     return (
         <>

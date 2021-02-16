@@ -3,6 +3,7 @@ import styleContainer from "../../../common/styles/Container.module.scss";
 import style from "./Experience.module.scss";
 import {ExperienceAndEducation} from "./job/ExperienсeAndEducation";
 import {faUserGraduate, faUserTie} from "@fortawesome/free-solid-svg-icons";
+import MyCV from '../../../assets/cv/LavrishchevArtemCV.pdf';
 
 const jobs = [
     {
@@ -49,11 +50,12 @@ export const Experience = (props) => {
         <div className={`${styleContainer.container} ${style.experienceContainer}`}>
             <h3 className={style.title}>EXPERIENCE & EDUCATION</h3>
             <div className={style.wrapper}>
-                <div>
+                <div className={style.item}>
                     <ExperienceAndEducation theme={props.theme} experience={jobs}/>
                 </div>
-                <div>
+                <div className={style.item}>
                     <ExperienceAndEducation theme={props.theme} experience={university}/>
+                    <a className={style.cv} href={MyCV} download="LavrishchevArtemCV.pdf"> DOWNLOAD CV </a>
                 </div>
             </div>
         </div>

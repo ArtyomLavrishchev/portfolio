@@ -7,10 +7,11 @@ import {useFormik} from 'formik'
 import axios from 'axios'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
+import {faEnvelopeOpen, faPhoneSquare} from "@fortawesome/free-solid-svg-icons";
 
 function Contact(props) {
     const [disable, setDisable] = useState(false)
-    const {block} = props.theme
+    const {block, text} = props.theme
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -30,19 +31,25 @@ function Contact(props) {
                 <Header h1Title={"GET IN"} spanTitle={" TOUCH"} rearTitle={"CONTACT"}/>
                 <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                     <div className={style.contacts}>
-                        <h3>DON'T BE SHY !</h3>
-                        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative
+                        <h3 className={style.title}>DON'T BE SHY !</h3>
+                        <p className={style.description}>Feel free to get in touch with me. I am always open to discussing new projects, creative
                             ideas or opportunities to be part of your visions.</p>
-                        <p>
-                            <span>MAIL ME</span>
-                            <a href="mailto:temalggt540@gmail.com" type={"email"}>temalggt540@gmail.com</a>
-
-                        </p>
-                        <p>
-                            <span>CALL ME</span>
-                            <a href="tel:+7 (989)711 61 72">+7 989 711 61 72</a>
-
-                        </p>
+                        <div>
+                            <div className={style.infoWrapper}>
+                                <FontAwesomeIcon className={style.icon} style={text} icon={faEnvelopeOpen}/>
+                                <div className={style.contactInformation}>
+                                    <span className={style.contact}>MAIL ME</span>
+                                    <a className={style.contactInfo} href="mailto:temalggt540@gmail.com" type={"email"}>temalggt540@gmail.com</a>
+                                </div>
+                            </div>
+                            <div className={style.infoWrapper}>
+                                <FontAwesomeIcon className={style.icon} style={text} icon={faPhoneSquare}/>
+                                <div className={style.contactInformation}>
+                                    <span className={style.contact}>CALL ME</span>
+                                    <a className={style.contactInfo} href="tel:+7 (989)711 61 72">+7 989 711 61 72</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <form onSubmit={formik.handleSubmit} className={style.form}>
                         <label htmlFor="email"/>
@@ -75,7 +82,8 @@ function Contact(props) {
                             placeholder={"YOUR MESSAGE"}
                         />
                         <button disabled={disable} style={block} className={style.btn} type="submit">
-                            SEND <span><FontAwesomeIcon icon={faPaperPlane}/></span>
+                            <span className={style.send}>SEND</span> <span className={style.btnIcon}><FontAwesomeIcon
+                            icon={faPaperPlane}/></span>
                         </button>
                     </form>
                 </div>

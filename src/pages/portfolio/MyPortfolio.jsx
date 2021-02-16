@@ -3,24 +3,28 @@ import style from "./MyPortfolio.module.scss"
 import styleContainer from "../../common/styles/Container.module.scss"
 import Header from "../header/Header";
 import {Preloader} from "../../common/preloader/Preloader";
-import Slider from "./Slider/Slider";
+import Slider from "./Sliders/Slider";
 import socialNet from "../../assets/images/works/socialnet.png"
 import trainingCards from "../../assets/images/works/trainingCards.png"
+import todo from "../../assets/images/works/todo.png"
 
 
 function MyPortfolio({theme}) {
     const works = [
         {
+            id: 1,
             title: "Social network",
             img: socialNet,
             url: "https://artyomlavrishchev.github.io/social-network/"
         },
         {
+            id: 2,
             title: "Todolist",
-            img: "https://img5.goodfon.ru/wallpaper/nbig/8/8b/abstraktsiia-kartinka-rendering-svetiashchiesia-volny-igra-s.jpg",
+            img: todo,
             url: "https://artyomlavrishchev.github.io/social-network/"
         },
         {
+            id: 3,
             title: "Training cards",
             img: trainingCards,
             url: "https://sshaporov.github.io/friday/"
