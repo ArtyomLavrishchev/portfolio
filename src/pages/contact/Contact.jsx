@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from "./Contact.module.scss"
 import styleContainer from "../../common/styles/Container.module.scss"
 import Header from "../header/Header";
@@ -9,6 +9,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
 
 function Contact(props) {
+    const [disable, setDisable] = useState(false)
     const {block} = props.theme
     const formik = useFormik({
         initialValues: {
@@ -17,7 +18,9 @@ function Contact(props) {
             message: '',
         },
         onSubmit: async (values) => {
+            setDisable(true)
             await axios.post('https://smtp-nodejs-server01.herokuapp.com/sendMessage', values)
+                .then(() => setDisable(false))
         },
     });
     return (
@@ -71,7 +74,7 @@ function Contact(props) {
                             value={formik.values.message}
                             placeholder={"YOUR MESSAGE"}
                         />
-                        <button style={block} className={style.btn} type="submit">
+                        <button disabled={disable} style={block} className={style.btn} type="submit">
                             SEND <span><FontAwesomeIcon icon={faPaperPlane}/></span>
                         </button>
                     </form>

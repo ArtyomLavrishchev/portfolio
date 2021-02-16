@@ -79,6 +79,13 @@
         margin-top: 20px;
         @include text(('Poppins', sans-serif), 16px, 600, 46px);
 
+        &:focus {
+          outline: none;
+        }
+        &:disabled {
+          opacity: 0.5;
+        }
+
         &:hover {
           box-shadow: $blockShadow;
         }
