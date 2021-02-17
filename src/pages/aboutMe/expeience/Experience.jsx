@@ -3,7 +3,7 @@ import styleContainer from "../../../common/styles/Container.module.scss";
 import style from "./Experience.module.scss";
 import {ExperienceAndEducation} from "./job/ExperienсeAndEducation";
 import {faUserGraduate, faUserTie} from "@fortawesome/free-solid-svg-icons";
-import MyCV from '../../../assets/cv/LavrishchevArtemCV.pdf';
+import MyCV from '../../../assets/cv/LavrishchevArtem.pdf';
 
 const jobs = [
     {
