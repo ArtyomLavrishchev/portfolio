@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.888ad15a.chunk.css",
-    "main.js": "/portfolio/static/js/main.19453001.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.19453001.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.816124a2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.816124a2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b649af6b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b649af6b.js.map",
     "static/css/2.d0fa9997.chunk.css": "/portfolio/static/css/2.d0fa9997.chunk.css",
     "static/js/2.e206d9fa.chunk.js": "/portfolio/static/js/2.e206d9fa.chunk.js",
     "static/js/2.e206d9fa.chunk.js.map": "/portfolio/static/js/2.e206d9fa.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.81432c92a219797589fbd0c84b3a258c.js": "/portfolio/precache-manifest.81432c92a219797589fbd0c84b3a258c.js",
+    "precache-manifest.96fbb2be9eb148fa4208885eb6da17e1.js": "/portfolio/precache-manifest.96fbb2be9eb148fa4208885eb6da17e1.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.d0fa9997.chunk.css.map": "/portfolio/static/css/2.d0fa9997.chunk.css.map",
     "static/css/main.888ad15a.chunk.css.map": "/portfolio/static/css/main.888ad15a.chunk.css.map",
     "static/js/2.e206d9fa.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e206d9fa.chunk.js.LICENSE.txt",
-    "static/media/LavrishchevArtemCV.pdf": "/portfolio/static/media/LavrishchevArtemCV.74521a3b.pdf",
+    "static/media/LavrishchevArtem.pdf": "/portfolio/static/media/LavrishchevArtem.dd6832ed.pdf",
     "static/media/cssIcon.svg": "/portfolio/static/media/cssIcon.ee3535d4.svg",
     "static/media/htmlIcon.svg": "/portfolio/static/media/htmlIcon.2c629019.svg",
     "static/media/jsIcon.svg": "/portfolio/static/media/jsIcon.40516382.svg",
     "static/media/PersonalInfos.module.scss": "/portfolio/static/media/photo.f965b1cb.jpg",
     "static/media/reactIcon.svg": "/portfolio/static/media/reactIcon.ac31c190.svg",
     "static/media/reduxIcon.svg": "/portfolio/static/media/reduxIcon.fd1f6f3d.svg",
-    "static/media/socialnet.png": "/portfolio/static/media/socialnet.d58076fd.png",
+    "static/media/socialnet.png": "/portfolio/static/media/socialnet.46131d89.png",
     "static/media/todo.png": "/portfolio/static/media/todo.25a88db7.png",
     "static/media/trainingCards.png": "/portfolio/static/media/trainingCards.a4de074b.png",
     "static/media/typescriptIcon.svg": "/portfolio/static/media/typescriptIcon.b4fb02a0.svg"
@@ -31,6 +31,6 @@
     "static/css/2.d0fa9997.chunk.css",
     "static/js/2.e206d9fa.chunk.js",
     "static/css/main.888ad15a.chunk.css",
-    "static/js/main.19453001.chunk.js"
+    "static/js/main.816124a2.chunk.js"
   ]
 }
