@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.888ad15a.chunk.css",
-    "main.js": "/portfolio/static/js/main.816124a2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.816124a2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.bb500eaf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bb500eaf.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b649af6b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b649af6b.js.map",
     "static/css/2.d0fa9997.chunk.css": "/portfolio/static/css/2.d0fa9997.chunk.css",
     "static/js/2.e206d9fa.chunk.js": "/portfolio/static/js/2.e206d9fa.chunk.js",
     "static/js/2.e206d9fa.chunk.js.map": "/portfolio/static/js/2.e206d9fa.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.96fbb2be9eb148fa4208885eb6da17e1.js": "/portfolio/precache-manifest.96fbb2be9eb148fa4208885eb6da17e1.js",
+    "precache-manifest.73502e72c1d9377e9ddd183bdf02397e.js": "/portfolio/precache-manifest.73502e72c1d9377e9ddd183bdf02397e.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.d0fa9997.chunk.css.map": "/portfolio/static/css/2.d0fa9997.chunk.css.map",
     "static/css/main.888ad15a.chunk.css.map": "/portfolio/static/css/main.888ad15a.chunk.css.map",
@@ -21,7 +21,7 @@
     "static/media/PersonalInfos.module.scss": "/portfolio/static/media/photo.f965b1cb.jpg",
     "static/media/reactIcon.svg": "/portfolio/static/media/reactIcon.ac31c190.svg",
     "static/media/reduxIcon.svg": "/portfolio/static/media/reduxIcon.fd1f6f3d.svg",
-    "static/media/socialnet.png": "/portfolio/static/media/socialnet.46131d89.png",
+    "static/media/socialnet.png": "/portfolio/static/media/socialnet.ef06c72a.png",
     "static/media/todo.png": "/portfolio/static/media/todo.25a88db7.png",
     "static/media/trainingCards.png": "/portfolio/static/media/trainingCards.a4de074b.png",
     "static/media/typescriptIcon.svg": "/portfolio/static/media/typescriptIcon.b4fb02a0.svg"
@@ -31,6 +31,6 @@
     "static/css/2.d0fa9997.chunk.css",
     "static/js/2.e206d9fa.chunk.js",
     "static/css/main.888ad15a.chunk.css",
-    "static/js/main.816124a2.chunk.js"
+    "static/js/main.bb500eaf.chunk.js"
   ]
 }
