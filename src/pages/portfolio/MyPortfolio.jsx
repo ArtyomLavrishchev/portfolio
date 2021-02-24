@@ -7,6 +7,7 @@ import Slider from "./Sliders/Slider";
 import socialNet from "../../assets/images/works/socialnet.png"
 import trainingCards from "../../assets/images/works/trainingCards.png"
 import todo from "../../assets/images/works/todo.png"
+import chat from "../../assets/images/works/chat.png"
 
 
 function MyPortfolio({theme}) {
@@ -28,6 +29,12 @@ function MyPortfolio({theme}) {
             title: "Training cards",
             img: trainingCards,
             url: "https://sshaporov.github.io/friday/"
+        },
+        {
+            id: 4,
+            title: "Chat_socket_io",
+            img: chat,
+            url: "https://artyomlavrishchev.github.io/chat_socket_io/"
         },
     ]
     return (

@@ -35,4 +35,3 @@ export const BurgerMenu = (props) => {
         </div>
     )
 }
-//activeStyle={activeColor}
