@@ -8,22 +8,30 @@ import MyCV from '../../../assets/cv/LavrishchevArtem.pdf';
 const jobs = [
     {
         id: 1,
+        specialty: "Frontend Developer",
+        organisation: "ZUZEX",
+        date: "2021-PRESENT",
+        description: "React JS developer",
+        logo: faUserTie
+    },
+    {
+        id: 2,
         specialty: "GEOINFORMATION SYSTEMS SPECIALIST",
         organisation: "DATUM GROUP",
-        date: "2018-PRESENT",
+        date: "2018-2021",
         description: `Work in various information systems (ArcGIS, QGIS, Zulu, etc.), preparation of reporting documentation,
                       quality control of work employees. Participation in projects for creation of various GIS systems for state structures,
                       infrastructure companies and large business. Database creation and cartographic material as a basis for IT solutions.`,
         logo: faUserTie
     },
     {
-        id: 2,
+        id: 3,
         specialty: "HEAD OF AUTO VINYL STUDIO",
         organisation: "INDIVIDUAL ENTREPRENEUR LAVRISHCHEV ARTEM SERGEEVICH",
         date: "2014-2018",
         description: "Organization of a stable service functioning at all stages work.",
         logo: faUserTie
-    }
+    },
 ]
 
 const university = [
